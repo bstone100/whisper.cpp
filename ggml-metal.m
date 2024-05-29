@@ -1466,8 +1466,8 @@ static enum ggml_status ggml_metal_graph_compute(
                         GGML_ASSERT(ne12 % ne02 == 0);
                         GGML_ASSERT(ne13 % ne03 == 0);
 
-                        const uint r2 = ne12/ne02;
-                        const uint r3 = ne13/ne03;
+                        const unsigned int r2 = ne12/ne02;
+                        const unsigned int r3 = ne13/ne03;
 
                         // find the break-even point where the matrix-matrix kernel becomes more efficient compared
                         // to the matrix-vector kernel
